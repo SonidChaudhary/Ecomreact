@@ -1,0 +1,95 @@
+.products {
+    padding: 10px 5px;
+    background-color: rgb(223, 219, 219);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 10px;
+  }
+  
+  .card {
+    padding-bottom: 10px;
+    background-color: rgb(87, 86, 86);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px rgb(43, 42, 42);
+  }
+  
+  .card > img {
+    height: 250px;
+    width: 200px;
+  }
+  
+  .card > .buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card > .buttons > button {
+    cursor: pointer;
+    font-size: 22px;
+    padding: 10px 20px;
+    color: white;
+    outline: none;
+    box-shadow: 0 0 3px black;
+    border-radius: 10px;
+  }
+  
+  .card > .buttons > button:first-child {
+    background-color: blue;
+  }
+  
+  .card > .buttons > button:last-child {
+    background-color: green;
+  }
+  
+  .card > .buttons > button:hover {
+    transition: all 0.4s ease 0s;
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 420px) {
+    .products {
+      grid-template-columns: 1fr;
+    }
+    .card > img {
+      width: 80%;
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 421px) and (max-width: 760px) {
+    .products {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card > img {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 761px) and (max-width: 1000px) {
+    .products {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .card > img {
+      width: 70%;
+      height: auto;
+    }
+  }
+  
+  @media (min-width: 1001px) {
+    .products {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .card > img {
+      width: 70%;
+      height: auto;
+    }
+  }
+  

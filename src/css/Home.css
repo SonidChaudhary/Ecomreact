@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.mainbody{
+    /* background-color: #f3f2ee; */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+.mainbody>.rightbox{
+    /* background-color: red; */
+    width: 50%;
+    height: 100%;
+    /* display: flex; */
+}
+.rightbox > .imgC {
+    /* width: 600px; */
+    /* height: 660px; */
+       width: 80%;
+       height: 119%;
+    /* background-color: black; */
+    margin-left: 10%;
+    /* margin-top: 10%; */
+    /* border-radius: 0% 100% 29% 71% / 30% 30% 70% 70%; */
+    overflow: hidden; /* This ensures that the image doesn't overflow the container */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers the image within the container */
+}
+
+.imgC > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; /* This ensures the image covers the entire container while maintaining its aspect ratio */
+    overflow: hidden;
+}
+
+
+.mainbody>.leftbox{
+    /* background-color: green; */
+    width:50%;
+    height: 100%;
+}
+.leftbox>.left_content{
+    /* background-color: pink; */
+    width: 70%;
+    height: 70%;
+    margin-top: 22%;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.shopnow{
+    width: 170px;
+    height: 50px;
+    background-color:black;
+}
+#summer{
+    color: #e53637;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#fall{
+    color: #111111;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 58px;
+}
+#para{
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+.shopnow{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 14px 30px;
+    color: #ffffff;
+    background: #000000;
+    letter-spacing: 4px;
+}
